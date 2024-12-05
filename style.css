@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header#header {
+    text-align: center;
+    background-color: #6593ff;
+    color: white;
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header hr {
+    border: 1px solid white;
+    width: 50%;
+    margin: 10px auto;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Article Sections */
+article#mainLeft,
+article#mainRight {
+    flex: 1;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #0062ff;
+    border-bottom: 2px solid #4cacaf;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section p, 
+section ul {
+    margin: 10px 0;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+section ul li::before {
+    content: "•";
+    color: #4ca5af;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Links Styling */
+a {
+    color: #4c93af;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
